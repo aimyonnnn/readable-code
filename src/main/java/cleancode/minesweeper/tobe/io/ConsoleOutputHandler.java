@@ -4,7 +4,8 @@ import cleancode.minesweeper.tobe.GameBoard;
 import cleancode.minesweeper.tobe.GameException;
 import cleancode.minesweeper.tobe.cell.CellSnapshot;
 import cleancode.minesweeper.tobe.io.sign.CellSignFinder;
-import cleancode.minesweeper.tobe.io.sign.CellSignProvider;
+//import cleancode.minesweeper.tobe.io.sign.CellSignProvider;
+import cleancode.minesweeper.tobe.io.sign.CellSignProvider2;
 import cleancode.minesweeper.tobe.position.CellPosition;
 
 import java.util.List;
@@ -33,7 +34,8 @@ public class ConsoleOutputHandler implements OutputHandler {
 
                 CellSnapshot snapshot = board.getSnapshot(cellPosition);
 //                String cellSign = cellSignFinder.findCellSignFrom(snapshot);
-                String cellSign = CellSignProvider.findCellSignFrom(snapshot);
+//                String cellSign = CellSignProvider.findCellSignFrom(snapshot);
+                String cellSign = CellSignProvider2.findCellSignFrom(snapshot);
 
                 System.out.print(cellSign + " ");
             }

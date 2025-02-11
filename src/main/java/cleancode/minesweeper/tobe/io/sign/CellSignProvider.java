@@ -1,3 +1,4 @@
+/*
 package cleancode.minesweeper.tobe.io.sign;
 
 import cleancode.minesweeper.tobe.cell.CellSnapshot;
@@ -51,7 +52,7 @@ public enum CellSignProvider implements CellSignProvidable {
     }
 
     @Override
-    public boolean supports(CellSnapshot cellSnapshot) {
+    public String supports(CellSnapshot cellSnapshot) {
         return cellSnapshot.isSameStatus(status);
     }
 
@@ -68,3 +69,4 @@ public enum CellSignProvider implements CellSignProvidable {
     }
 
 }
+*/
